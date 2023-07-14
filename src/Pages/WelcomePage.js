@@ -8,13 +8,15 @@ import LogoWord from "../asset/logoword.png";
 import Mario from "../asset/mario3.gif";
 import MarioStay from "../asset/mario-ready.gif";
 import { useNavigate } from "react-router-dom";
+import bg from "../asset/bg.gif";
+
 
 const useStyle = makeStyles((theme) => ({
   banner: {
     backgroundPosition: "center center",
     minHeight: "100vh",
     background:
-      "linear-gradient(0deg, rgba(255,255,255,0.3) 0%, rgba(150,150,150,0.5) 100%), url(https://www.themasterpicks.com/wp-content/uploads/2020/04/22b22287602523.5dbd29081561d.gif)",
+      `linear-gradient(0deg, rgba(255,255,255,0.3) 0%, rgba(150,150,150,0.5) 100%), url(${bg})`,
     backgroundSize: "100%",
     display: "flex",
     justifyContent: "center",

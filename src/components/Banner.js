@@ -4,12 +4,13 @@ import React from "react";
 import pixel from "../asset/pixelated_1.png";
 import { CryptoState } from "../CryptoContext";
 import { useNavigate } from "react-router-dom";
+import bg from "../asset/bg.gif";
 
 const useStyle = makeStyles((theme) => ({
   banner: {
     backgroundPosition: "center center",
     background:
-      "linear-gradient(180deg, rgba(52,0,57,0.87) 0%, rgba(107,13,116,0.8) 70%, rgba(255,226,39,1) 100%), url(https://www.themasterpicks.com/wp-content/uploads/2020/04/22b22287602523.5dbd29081561d.gif)",
+      `linear-gradient(180deg, rgba(52,0,57,0.87) 0%, rgba(107,13,116,0.8) 70%, rgba(255,226,39,1) 100%), url(${bg})`,
     backgroundSize: "contain",
     display: "flex",
     justifyContent: "center",
